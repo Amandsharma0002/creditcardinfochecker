@@ -30,7 +30,7 @@ public class Validation {
         }
     }
 
-    boolean type_validation(String k)                   //type_validation
+    boolean type_validation(String k)
     {
         String American_Express = "^3[47][0-9]{13}$";
         String Discover = "^65[4-9][0-9]{13}|64[4-9][0-9]{13}|6011[0-9]{12}|(622(?:12[6-9]|1[3-9][0-9]|[2-8][0-9][0-9]|9[01][0-9]|92[0-5])[0-9]{10})$";
@@ -50,7 +50,7 @@ public class Validation {
     }
     boolean cvv_validation(String t)
     {
-        String cvv_regex = "^[0-9]{3,4}$";                                    //cvv regex
+        String cvv_regex = "^[0-9]{3,4}$";
         boolean r1=Pattern.matches(cvv_regex,t);
         if(r1)
         {
@@ -60,7 +60,7 @@ public class Validation {
             return false;
 
     }
-    boolean date_validation(String q)                   //date_validation
+    boolean date_validation(String q)
     {
 //        String date_regex = "^(0[1-9]|1[0-2])(/)([0-9]{2})$";
 //        String date_regex = "^(?:(?:31(\\/|-|\\.)(?:0?[13578]|1[02]))\\1|(?:(?:29|30)(\\/|-|\\.)(?:0?[13-9]|1[0-2])\\2))(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:29(\\/|-|\\.)0?2\\3(?:(?:(?:1[6-9]|[2-9]\\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\\d|2[0-8])(\\/|-|\\.)(?:(?:0?[1-9])|(?:1[0-2]))\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$";
@@ -76,7 +76,7 @@ public class Validation {
         }
 
     }
-    boolean Name_validation(String j)       //name_validation
+    boolean Name_validation(String j)       //
     {
         String name_regex="^[A-Z][a-z]*$";
         boolean r1=Pattern.matches(name_regex,j);

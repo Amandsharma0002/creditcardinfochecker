@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 count=0;
 
-                //---------------------------------------Condition for Card Number---------------------------------
+
                 if(obj.IsValid(e1.getText().toString()))
                 {
                     if(obj.type_validation(e1.getText().toString())==false)
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     v1.setText("Invalid Creditcard Number");
                     count=0;
                 }
-                //---------------------------------------Condition for cvv-------------------------------------------
+
                 if(obj.cvv_validation(e2.getText().toString())==false)
                 {
                     v2.setText("Invalid cvv ");
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     v2.setText("");
                     count+=1;
                 }
-                //-----------------------------------------condition for date-------------------------------------------
+
                 if(obj.date_validation(e3.getText().toString())==false)
                 {
                     v3.setText("Invalid date");
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                     v3.setText("");
                     count+=1;
                 }
-                //------------------------------------------condition for first name----------------------------------------
+
                 if(obj.Name_validation(e4.getText().toString())==false)
                 {
                     v4.setText("Invalid Name");
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                     v4.setText("");
                     count+=1;
                 }
-                //-------------------------------------------condition for Last name------------------------------------------
+
                 if(obj.Name_validation(e5.getText().toString())==false)
                 {
                     v5.setText("Inavalid Name");
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                     v5.setText("");
                     count+=1;
                 }
-                //----------------------------------------------------condition for successful emplementation of condetials-------------------
+
                 if(count==5)
                 {
                     alertBuilder = new AlertDialog.Builder(MainActivity.this);
