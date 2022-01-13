@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(obj.Name_validation(e5.getText().toString())==false)
                 {
-                    v5.setText("Inavalid Name");
+                    v5.setText("Invalid Name");
                     count=0;
                 }
                 else
